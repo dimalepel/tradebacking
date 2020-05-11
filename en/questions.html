@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Questions  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../img/apple-touch-icon.png">
+  <link rel="image/vdn.microsoft.icon" href="../img/apple-touch-icon.png">
+  <link rel="image/x-icon" href="../img/apple-touch-icon.png">
+  <link rel="icon" href="../img/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.default.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<section class="financing-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <a href="/">
+          <img class="financing-logo" src="../img/tblogo.png">
+        </a>
+      </div>
+      <div class="col-lg-9">
+        
+        <div class="financing-others">
+          /
+          <a class="financing-header-form" href="#" data-show="login_form">Log in</a>
+          <div class="financing-lang">
+            <span class="financing-header-form">EN</span> <div class="arrow-down"></div>
+            <div class="financing-languages">
+              <ul>
+                <a href="/ru/index.html"><div>RU</div></a>
+                <a href="/lv/index.html"><div>LV</div></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- A grey horizontal navbar that becomes vertical on small screens -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="/"><img class="financing-logo" src="../img/tblogo.png"></a>
+      
+      <!-- Toggler/collapsibe Button -->
+      <div class="navbar-header">
+        <button class="navbar-toggler" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      
+      
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="navbar-nav">
+          <div class="mobile-header">
+            <li class="header-mobile"><a class="nav-link" href="#" data-show="login_form">Login</a></li>
+            <li class="header-mobile"><a class="financing-header-fin nav-link" href="#" data-show="application_form">Apply for TradeBacking</a></li>
+            <li class="header-mobile"><a class="nav-link financing-header-form" href="#" data-show="login_form">Log in</a></li>
+            <li class="header-mobile">
+              <div class="mob-link">
+                <a class="nav-mobile-lang " href="/ru/index.html">RU</a>
+                <a class="nav-mobile-lang " href="/lv/index.html">LV</a>
+                <a class="nav-mobile-lang active-lang" href="/">EN</a>
+              </div>
+            </li>
+          </div>
+          <li class="nav-item ">
+            <a class="nav-link" href="/en/get-tradebacking.html">
+              Get TradeBacking
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/en/questions.html">
+              Questions
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/en/about.html">
+              About
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/en/investor.html">
+              Investor
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/en/contacts.html">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<script type="text/javascript">
+  var translations = {
+    'checkbox' : "You can&#039;t proceed without the consent",
+    'email' : "Wrong email address format",
+    'emptyfields' : "Please, fill in blank fields",
+    'phone': "Wrong phone number"
+  }
+</script>
+
+<section class="registration_section" data-section="login_form">
+  <div class="exit-calculator d-flex justify-content-end">
+    <button class="button-exit" data-hide="login_form">
+            <span class="exit-text">
+                Close
+            </span>
+      <img src="../img/btn_close.png" alt="">
+    </button>
+  </div>
+  <div class="d-flex justify-content-center" id="title_2">
+    <div class="title-line"><div class="title-text">Log in</div><hr></div>
+  </div>
+  <div class="container" id="content_2">
+    <div class="d-flex justify-content-center">
+      <form id="login_form" autocomplete="off" class="groupcontent" action="#" data-form="login" data-url="/en/login" method="POST">
+        <div class="caption">Login</div>
+        <input required="" data-parsley-minlength="1" type="text" data-parsley-errors-messages-disabled="" class="form-control-email" id="login_login_input" name="username" autocomplete="off" autocorrect="off">
+        <div class="caption">Password</div>
+        <input required="" data-parsley-minlength="1" type="password" data-parsley-errors-messages-disabled="" class="form-control-email" id="login_password_input" name="password" autocomplete="off" autocorrect="off">
+        <div class="errorwindow" id="errorwindow-login" data-error-unauthorized="Wrong email or password"></div>
+        <input class="sendbutton" type="submit" value="Log in" id="agree">
+      </form>
+    </div>
+  </div>
+</section>    <section class="screen" data-section="application_form">
+  <div class="exit-calculator d-flex justify-content-end">
+    <button class="button-exit" data-hide="application_form">
+                    <span class="exit-text" id="preregistration_exit_button">
+                        Close
+                    </span>
+      <img src="../img/btn_close.png" alt="">
+    </button>
+  </div>
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <form autocomplete="off" class="groupcontent" action="#" id="preregistration_form" method="POST" data-form="application" data-url="/ajax/application/apply">
+        <div class="title">Apply for TradeBacking</div>
+        <div class="paragraph">Send us your contacts and we will contact you within one business day!</div>
+        <div class="caption">Phone number</div>
+        <img class="globe" src="../img/blueglobe.png">
+        <div class="custom-select">
+          <select autofocus="" autocomplete="off" autocorrect="off" id="select-country-pre">
+            <option value="" data-phone-prefix="" selected="" id="selected_country"></option>
+            <option value="AF" data-phone-prefix="+93">Afghanistan</option>
+            <option value="AX" data-phone-prefix="+358">Åland Islands</option>
+            <option value="AL" data-phone-prefix="+355">Albania</option>
+            <option value="DZ" data-phone-prefix="+213">Algeria</option>
+            <option value="AD" data-phone-prefix="+376">Andorra</option>
+            <option value="AO" data-phone-prefix="+244">Angola</option>
+            <option value="AI" data-phone-prefix="+1 264">Anguilla</option>
+            <option value="AG" data-phone-prefix="+1 268">Antigua and Barbuda</option>
+            <option value="AR" data-phone-prefix="+54">Argentina</option>
+            <option value="AM" data-phone-prefix="+374">Armenia</option>
+            <option value="AW" data-phone-prefix="+297">Aruba</option>
+            <option value="AU" data-phone-prefix="+61">Australia</option>
+            <option value="AT" data-phone-prefix="+43">Austria</option>
+            <option value="AZ" data-phone-prefix="+994">Azerbaijan</option>
+            <option value="BS" data-phone-prefix="+1 242">Bahamas</option>
+            <option value="BH" data-phone-prefix="+973">Bahrain</option>
+            <option value="BD" data-phone-prefix="+880">Bangladesh</option>
+            <option value="BB" data-phone-prefix="+1 246">Barbados</option>
+            <option value="BY" data-phone-prefix="+375">Belarus</option>
+            <option value="BE" data-phone-prefix="+32">Belgium</option>
+            <option value="BZ" data-phone-prefix="+501">Belize</option>
+            <option value="BJ" data-phone-prefix="+229">Benin</option>
+            <option value="BM" data-phone-prefix="+1 441">Bermuda</option>
+            <option value="BT" data-phone-prefix="+975">Bhutan</option>
+            <option value="BO" data-phone-prefix="+591">Bolivia, Plurinational State of</option>
+            <option value="BA" data-phone-prefix="+387">Bosnia and Herzegovina</option>
+            <option value="BW" data-phone-prefix="+267">Botswana</option>
+            <option value="BR" data-phone-prefix="+55">Brazil</option>
+            <option value="BN" data-phone-prefix="+673">Brunei Darussalam</option>
+            <option value="BG" data-phone-prefix="+359">Bulgaria</option>
+            <option value="BF" data-phone-prefix="+226">Burkina Faso</option>
+            <option value="BI" data-phone-prefix="+257">Burundi</option>
+            <option value="KH" data-phone-prefix="+855">Cambodia</option>
+            <option value="CM" data-phone-prefix="+237">Cameroon</option>
+            <option value="CA" data-phone-prefix="+1">Canada</option>
+            <option value="CV" data-phone-prefix="+238">Cape Verde</option>
+            <option value="KY" data-phone-prefix="+1 345">Cayman Islands</option>
+            <option value="CF" data-phone-prefix="+236">Central African Republic</option>
+            <option value="TD" data-phone-prefix="+235">Chad</option>
+            <option value="CL" data-phone-prefix="+56">Chile</option>
+            <option value="CN" data-phone-prefix="+86">China</option>
+            <option value="CO" data-phone-prefix="+57">Colombia</option>
+            <option value="KM" data-phone-prefix="+269">Comoros</option>
+            <option value="CG" data-phone-prefix="+242">Congo</option>
+            <option value="CD" data-phone-prefix="+243">Democratic Republic of the Congo</option>
+            <option value="CR" data-phone-prefix="+506">Costa Rica</option>
+            <option value="CI" data-phone-prefix="+225">Côte d'Ivoire</option>
+            <option value="HR" data-phone-prefix="+385">Croatia</option>
+            <option value="CU" data-phone-prefix="+53">Cuba</option>
+            <option value="CY" data-phone-prefix="+357">Cyprus</option>
+            <option value="CZ" data-phone-prefix="+420">Czech Republic</option>
+            <option value="DK" data-phone-prefix="+45">Denmark</option>
+            <option value="DJ" data-phone-prefix="+253">Djibouti</option>
+            <option value="DM" data-phone-prefix="+1 767">Dominica</option>
+            <option value="DO" data-phone-prefix="+1 809">Dominican Republic</option>
+            <option value="EC" data-phone-prefix="+593">Ecuador</option>
+            <option value="EG" data-phone-prefix="+20">Egypt</option>
+            <option value="SV" data-phone-prefix="+503">El Salvador</option>
+            <option value="GQ" data-phone-prefix="+240">Equatorial Guinea</option>
+            <option value="ER" data-phone-prefix="+291">Eritrea</option>
+            <option value="EE" data-phone-prefix="+372">Estonia</option>
+            <option value="ET" data-phone-prefix="+251">Ethiopia</option>
+            <option value="FK" data-phone-prefix="+500">Falkland Islands (Malvinas)</option>
+            <option value="FJ" data-phone-prefix="+679">Fiji</option>
+            <option value="FI" data-phone-prefix="+358">Finland</option>
+            <option value="FR" data-phone-prefix="+33">France</option>
+            <option value="PF" data-phone-prefix="+689">French Polynesia</option>
+            <option value="GA" data-phone-prefix="+241">Gabon</option>
+            <option value="GM" data-phone-prefix="+220">Gambia</option>
+            <option value="GE" data-phone-prefix="+995">Georgia</option>
+            <option value="DE" data-phone-prefix="+49">Germany</option>
+            <option value="GH" data-phone-prefix="+233">Ghana</option>
+            <option value="GI" data-phone-prefix="+350">Gibraltar</option>
+            <option value="GR" data-phone-prefix="+30">Greece</option>
+            <option value="GD" data-phone-prefix="+1 473">Grenada</option>
+            <option value="GT" data-phone-prefix="+502">Guatemala</option>
+            <option value="GG" data-phone-prefix="+44">Guernsey</option>
+            <option value="GN" data-phone-prefix="+224">Guinea</option>
+            <option value="GW" data-phone-prefix="+245">Guinea-Bissau</option>
+            <option value="GY" data-phone-prefix="+592">Guyana</option>
+            <option value="HT" data-phone-prefix="+509">Haiti</option>
+            <option value="HN" data-phone-prefix="+504">Honduras</option>
+            <option value="HK" data-phone-prefix="+852">Hong Kong</option>
+            <option value="HU" data-phone-prefix="+36">Hungary</option>
+            <option value="IS" data-phone-prefix="+354">Iceland</option>
+            <option value="IN" data-phone-prefix="+91">India</option>
+            <option value="ID" data-phone-prefix="+62">Indonesia</option>
+            <option value="IR" data-phone-prefix="+98">Iran</option>
+            <option value="IQ" data-phone-prefix="+964">Iraq</option>
+            <option value="IE" data-phone-prefix="+353">Ireland</option>
+            <option value="IM" data-phone-prefix="+44">Isle of Man</option>
+            <option value="IL" data-phone-prefix="+972">Israel</option>
+            <option value="IT" data-phone-prefix="+39">Italy</option>
+            <option value="JM" data-phone-prefix="+1 876">Jamaica</option>
+            <option value="JP" data-phone-prefix="+81">Japan</option>
+            <option value="JE" data-phone-prefix="+44">Jersey</option>
+            <option value="JO" data-phone-prefix="+962">Jordan</option>
+            <option value="KZ" data-phone-prefix="+7">Kazakhstan</option>
+            <option value="KE" data-phone-prefix="+254">Kenya</option>
+            <option value="KP" data-phone-prefix="+850">Democratic People's Republic of Korea</option>
+            <option value="KR" data-phone-prefix="+82">Republic of Korea</option>
+            <option value="KW" data-phone-prefix="+965">Kuwait</option>
+            <option value="KG" data-phone-prefix="+996">Kyrgyzstan</option>
+            <option value="LA" data-phone-prefix="+856">Lao People's Democratic Republic</option>
+            <option value="LV" data-phone-prefix="+371">Latvia</option>
+            <option value="LB" data-phone-prefix="+961">Lebanon</option>
+            <option value="LS" data-phone-prefix="+266">Lesotho</option>
+            <option value="LR" data-phone-prefix="+231">Liberia</option>
+            <option value="LY" data-phone-prefix="+218">Libyan Arab Jamahiriya</option>
+            <option value="LI" data-phone-prefix="+423">Liechtenstein</option>
+            <option value="LT" data-phone-prefix="+370">Lithuania</option>
+            <option value="LU" data-phone-prefix="+352">Luxembourg</option>
+            <option value="MO" data-phone-prefix="+853">Macao</option>
+            <option value="MK" data-phone-prefix="+389">Macedonia</option>
+            <option value="MG" data-phone-prefix="+261">Madagascar</option>
+            <option value="MW" data-phone-prefix="+265">Malawi</option>
+            <option value="MY" data-phone-prefix="+60">Malaysia</option>
+            <option value="MV" data-phone-prefix="+960">Maldives</option>
+            <option value="ML" data-phone-prefix="+223">Mali</option>
+            <option value="MT" data-phone-prefix="+356">Malta</option>
+            <option value="MR" data-phone-prefix="+222">Mauritania</option>
+            <option value="MU" data-phone-prefix="+230">Mauritius</option>
+            <option value="MX" data-phone-prefix="+52">Mexico</option>
+            <option value="FM" data-phone-prefix="+691">Micronesia</option>
+            <option value="MD" data-phone-prefix="+373">Moldova</option>
+            <option value="MC" data-phone-prefix="+377">Monaco</option>
+            <option value="MN" data-phone-prefix="+976">Mongolia</option>
+            <option value="ME" data-phone-prefix="+382">Montenegro</option>
+            <option value="MS" data-phone-prefix="+1 664">Montserrat</option>
+            <option value="MA" data-phone-prefix="+212">Morocco</option>
+            <option value="MZ" data-phone-prefix="+258">Mozambique</option>
+            <option value="MM" data-phone-prefix="+95">Myanmar</option>
+            <option value="NA" data-phone-prefix="+264">Namibia</option>
+            <option value="NP" data-phone-prefix="+977">Nepal</option>
+            <option value="NL" data-phone-prefix="+31">Netherlands</option>
+            <option value="NZ" data-phone-prefix="+64">New Zealand</option>
+            <option value="NI" data-phone-prefix="+505">Nicaragua</option>
+            <option value="NE" data-phone-prefix="+227">Niger</option>
+            <option value="NG" data-phone-prefix="+234">Nigeria</option>
+            <option value="NO" data-phone-prefix="+47">Norway</option>
+            <option value="OM" data-phone-prefix="+968">Oman</option>
+            <option value="PK" data-phone-prefix="+92">Pakistan</option>
+            <option value="PW" data-phone-prefix="+680">Palau</option>
+            <option value="PA" data-phone-prefix="+507">Panama</option>
+            <option value="PG" data-phone-prefix="+675">Papua New Guinea</option>
+            <option value="PY" data-phone-prefix="+595">Paraguay</option>
+            <option value="PE" data-phone-prefix="+51">Peru</option>
+            <option value="PH" data-phone-prefix="+63">Philippines</option>
+            <option value="PL" data-phone-prefix="+48">Poland</option>
+            <option value="PT" data-phone-prefix="+351">Portugal</option>
+            <option value="PR" data-phone-prefix="+1">Puerto Rico</option>
+            <option value="QA" data-phone-prefix="+974">Qatar</option>
+            <option value="RO" data-phone-prefix="+40">Romania</option>
+            <option value="RU" data-phone-prefix="+7">Russian Federation</option>
+            <option value="RW" data-phone-prefix="+250">Rwanda</option>
+            <option value="SH" data-phone-prefix="+290">Saint Helena</option>
+            <option value="KN" data-phone-prefix="+1 869">Saint Kitts and Nevis</option>
+            <option value="LC" data-phone-prefix="+1 758">Saint Lucia</option>
+            <option value="VC" data-phone-prefix="+1 784">Saint Vincent and the Grenadines</option>
+            <option value="WS" data-phone-prefix="+685">Samoa</option>
+            <option value="SA" data-phone-prefix="+966">Saudi Arabia</option>
+            <option value="SN" data-phone-prefix="+221">Senegal</option>
+            <option value="RS" data-phone-prefix="+381">Serbia</option>
+            <option value="SC" data-phone-prefix="+248">Seychelles</option>
+            <option value="SL" data-phone-prefix="+232">Sierra Leone</option>
+            <option value="SG" data-phone-prefix="+65">Singapore</option>
+            <option value="SK" data-phone-prefix="+421">Slovakia</option>
+            <option value="SI" data-phone-prefix="+386">Slovenia</option>
+            <option value="SB" data-phone-prefix="+677">Solomon Islands</option>
+            <option value="SO" data-phone-prefix="+252">Somalia</option>
+            <option value="ZA" data-phone-prefix="+27">South Africa</option>
+            <option value="ES" data-phone-prefix="+34">Spain</option>
+            <option value="LK" data-phone-prefix="+94">Sri Lanka</option>
+            <option value="SD" data-phone-prefix="+249">Sudan</option>
+            <option value="SR" data-phone-prefix="+597">Suriname</option>
+            <option value="SZ" data-phone-prefix="+268">Swaziland</option>
+            <option value="SE" data-phone-prefix="+46">Sweden</option>
+            <option value="CH" data-phone-prefix="+41">Switzerland</option>
+            <option value="SY" data-phone-prefix="+963">Syrian Arab Republic</option>
+            <option value="TW" data-phone-prefix="+886">Taiwan</option>
+            <option value="TJ" data-phone-prefix="+992">Tajikistan</option>
+            <option value="TZ" data-phone-prefix="+255">Tanzania</option>
+            <option value="TH" data-phone-prefix="+66">Thailand</option>
+            <option value="TL" data-phone-prefix="+670">Timor-Leste</option>
+            <option value="TG" data-phone-prefix="+228">Togo</option>
+            <option value="TO" data-phone-prefix="+676">Tonga</option>
+            <option value="TT" data-phone-prefix="+1 868">Trinidad and Tobago</option>
+            <option value="TN" data-phone-prefix="+216">Tunisia</option>
+            <option value="TR" data-phone-prefix="+90">Turkey</option>
+            <option value="TM" data-phone-prefix="+993">Turkmenistan</option>
+            <option value="TC" data-phone-prefix="+1-649">Turks and Caicos Islands</option>
+            <option value="UG" data-phone-prefix="+256">Uganda</option>
+            <option value="UA" data-phone-prefix="+380">Ukraine</option>
+            <option value="AE" data-phone-prefix="+971">United Arab Emirates</option>
+            <option value="GB" data-phone-prefix="+44">United Kingdom</option>
+            <option value="US" data-phone-prefix="+1">United States</option>
+            <option value="UY" data-phone-prefix="+598">Uruguay</option>
+            <option value="UZ" data-phone-prefix="+998">Uzbekistan</option>
+            <option value="VU" data-phone-prefix="+678">Vanuatu</option>
+            <option value="VE" data-phone-prefix="+58">Venezuela</option>
+            <option value="VN" data-phone-prefix="+84">Viet Nam</option>
+            <option value="VG" data-phone-prefix="+1 284">Virgin Islands, British</option>
+            <option value="YE" data-phone-prefix="+967">Yemen</option>
+            <option value="ZM" data-phone-prefix="+260">Zambia</option>
+            <option value="ZW" data-phone-prefix="+263">Zimbabwe</option>
+          </select>
+        </div>
+        <input required="" data-parsley-errors-messages-disabled="" data-parsley-minlength="1" type="text" class="countrylabel" id="2_number_label_pre" name="user_countrycode" readonly="" autocomplete="off" autocorrect="off">
+        <input required="" data-parsley-errors-messages-disabled="" data-parsley-minlength="1" type="text" class="form-control-phone" data-parsley-type="number" id="2_number_input_pre" name="user_number" autocomplete="off" autocorrect="off">
+        <div class="caption">Email address</div>
+        <input required="" data-parsley-errors-messages-disabled="" data-parsley-minlength="1" type="email" class="form-control-email" id="5_email_input_pre" name="user_email" autocomplete="off" autocorrect="off">
+        <input type="hidden" name="locale" value="en">
+        <div class="errorwindow" id="errorwindow-preregistration"></div>
+        <input class="sendbutton" type="submit" value="Send" id="send_button_pre">
+      </form>
+    </div>
+  </div>
+</section>    <section class="screen" data-section="calculator_form">
+  <div class="exit-calculator d-flex justify-content-end">
+    <button class="button-exit" data-hide="calculator_form">
+                    <span class="exit-text">
+                        Close
+                    </span>
+      <img src="../img/btn_close.png" alt="">
+    </button>
+  </div>
+  <div class="container">
+    <div class="main-calculator">
+      <div class="row">
+        <div class="col-md-6 d-flex title-div">
+          <div class="title-text flex-grow-1">
+            Calculate and order financing
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 left">
+          <div class="leftside">
+            <div class="sum">
+              <div class="range-slider">
+                <div class="detail d-flex">
+                                    <span class="text calculator_loan_amount">
+                                        Amount of Financing
+                                    </span>
+                  <span class="range-slider__value flex-grow-1">
+                                        <input type="text" id="value_goods_price" class="amount input1 range-value_goods_price range-value" data-el="#range_goods_price" data-max="2000000" data-min="10000">
+                                    </span>
+                  <span class="currency justify-content-center">
+                                        EUR
+                                    </span>
+                </div>
+                <input id="range_goods_price" data-el=".range-value_goods_price" class="input-range" type="range" value="1750000" min="10000" max="2000000" step="1000">
+              </div>
+              <span class="slider-min">
+                                10 000
+                            </span>
+              <span class="slider-max">
+                                2 000 000
+                            </span>
+            </div>
+            <div class="term">
+              <div class="range-slider">
+                <div class="detail d-flex">
+                                    <span class="text">
+                                        Loan Maturity
+                                    </span>
+                  <span class="range-slider__value flex-grow-1">
+                                        <input type="text" id="value_loan_days" class="amount input2 range-value_loan_days range-value" data-el="#range_loan_days" data-max="120" data-min="1">
+                                    </span>
+                  <span class="days">
+                                        day(-s)
+                                    </span>
+                </div>
+                <input id="range_loan_days" data-el=".range-value_loan_days" class="input-range" type="range" value="30" min="1" max="120">
+              </div>
+              <span class="slider-min">
+                                1
+                            </span>
+              <span class="slider-max">
+                                120
+                            </span>
+            </div>
+            <div class="repay">
+                            <span class="text">
+                                Amount payable :
+                            </span>
+              <span class="repay-amount" id="total_repay">
+                                1783541.67
+                            </span>
+              <span class="currency">
+                                EUR
+                            </span>
+            </div>
+            <div class="hidden">                             <input type="text" value="50" id="prepayment">
+              <span id="prepayment-result">x</span>
+              <input type="text" value="3" id="administration">
+              <span id="administration-result">x</span>
+              <input type="text" value="10" id="per-year">
+              <span id="per-year-result">x</span>
+              <span id="result">999</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 right">
+          <div class="rightside">
+            <div class="text">
+              The amount of financing is up to 80% of the goods value. The amount to be paid is calculated at the cost of capital of 18% per year. The actual amount may differ, as it will be calculated individually after careful study of the details of the transaction.
+            </div>
+            <form action="#" method="post" data-form="application">                             <input type="text" class="hidden range-value_goods_price" id="form_goods_price" value="temp" name="goods_price">                             <input type="text" class="hidden range-value_loan_days" id="form_loan_days" value="temp" name="loan_days">                             <button class="approve" type="button" data-show="application_form"> Apply for TradeBacking </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="screen" data-section="thank_you">
+  <div class="exit-calculator d-flex justify-content-end">
+    <button class="button-exit" data-hide="thank_you">
+                    <span class="exit-text">
+                        Close
+                    </span>
+      <img src="../img/btn_close.png" alt="">
+    </button>
+  </div>
+  <div class="container">
+    <div class="main_registerdone">
+      <div class="registerdone_title">
+        Thank you
+      </div>
+      <div class="line">
+        <hr>
+      </div>
+      <div class="registerdone_text">
+        We will contact you within one business day!
+      </div>
+    </div>
+  </div>
+</section>    <section class="vacancy-screen" data-section="vacancy_form">
+  <div class="exit-calculator d-flex justify-content-end">
+    <button class="button-exit" data-hide="vacancy_form">
+            <span class="exit-text" id="preregistration_exit_button">
+                Close
+            </span>
+      <img src="../img/btn_close.png" alt="">
+    </button>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div class="title-line"><div class="title-text" data-vacancy-title=""></div><hr></div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div class="vacancy_form">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <form class="groupcontent" id="vacancy_form" action="#" method="POST" data-form="vacancy" data-url="/ajax/vacancy/apply">
+            <div class="row">
+              <div class="col-md-12 vacancy_form_title">Please fill in the form below:</div>
+              <div class="col-md-4 vacancy_form_caption">
+                <span>Name <span style="color: #DD4539">*</span> </span>
+              </div>
+              <div class="col-md-8">
+                <input required="" data-parsley-errors-messages-disabled="" data-parsley-minlength="1" type="text" class="form-control-email" id="user_input_name" name="vacancy[first_name]" autocomplete="off" autocorrect="off">
+              </div>
+              <div class="col-md-4 vacancy_form_caption">
+                <span>Surname</span>
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control-email" id="user_input_surname" name="vacancy[last_name]" autocomplete="off" autocorrect="off">
+              </div>
+              <div class="col-md-4 vacancy_form_caption">
+                <span>Phone (code) <span style="color: #DD4539">*</span></span>
+              </div>
+              <div class="col-md-8">
+                <img class="globe" src="../img/blueglobe.png">
+                <div class="custom-select">
+                  <select autofocus="" autocomplete="off" autocorrect="off" id="select-country-vacancy" name="vacancy[phone][country]">
+                    <option value="" selected="" id="selected_country"></option>
+                    <option value="AF" data-phone-prefix="+93">Afghanistan</option>
+                    <option value="AX" data-phone-prefix="+358">Åland Islands</option>
+                    <option value="AL" data-phone-prefix="+355">Albania</option>
+                    <option value="DZ" data-phone-prefix="+213">Algeria</option>
+                    <option value="AD" data-phone-prefix="+376">Andorra</option>
+                    <option value="AO" data-phone-prefix="+244">Angola</option>
+                    <option value="AI" data-phone-prefix="+1 264">Anguilla</option>
+                    <option value="AG" data-phone-prefix="+1 268">Antigua and Barbuda</option>
+                    <option value="AR" data-phone-prefix="+54">Argentina</option>
+                    <option value="AM" data-phone-prefix="+374">Armenia</option>
+                    <option value="AW" data-phone-prefix="+297">Aruba</option>
+                    <option value="AU" data-phone-prefix="+61">Australia</option>
+                    <option value="AT" data-phone-prefix="+43">Austria</option>
+                    <option value="AZ" data-phone-prefix="+994">Azerbaijan</option>
+                    <option value="BS" data-phone-prefix="+1 242">Bahamas</option>
+                    <option value="BH" data-phone-prefix="+973">Bahrain</option>
+                    <option value="BD" data-phone-prefix="+880">Bangladesh</option>
+                    <option value="BB" data-phone-prefix="+1 246">Barbados</option>
+                    <option value="BY" data-phone-prefix="+375">Belarus</option>
+                    <option value="BE" data-phone-prefix="+32">Belgium</option>
+                    <option value="BZ" data-phone-prefix="+501">Belize</option>
+                    <option value="BJ" data-phone-prefix="+229">Benin</option>
+                    <option value="BM" data-phone-prefix="+1 441">Bermuda</option>
+                    <option value="BT" data-phone-prefix="+975">Bhutan</option>
+                    <option value="BO" data-phone-prefix="+591">Bolivia, Plurinational State of</option>
+                    <option value="BA" data-phone-prefix="+387">Bosnia and Herzegovina</option>
+                    <option value="BW" data-phone-prefix="+267">Botswana</option>
+                    <option value="BR" data-phone-prefix="+55">Brazil</option>
+                    <option value="BN" data-phone-prefix="+673">Brunei Darussalam</option>
+                    <option value="BG" data-phone-prefix="+359">Bulgaria</option>
+                    <option value="BF" data-phone-prefix="+226">Burkina Faso</option>
+                    <option value="BI" data-phone-prefix="+257">Burundi</option>
+                    <option value="KH" data-phone-prefix="+855">Cambodia</option>
+                    <option value="CM" data-phone-prefix="+237">Cameroon</option>
+                    <option value="CA" data-phone-prefix="+1">Canada</option>
+                    <option value="CV" data-phone-prefix="+238">Cape Verde</option>
+                    <option value="KY" data-phone-prefix="+1 345">Cayman Islands</option>
+                    <option value="CF" data-phone-prefix="+236">Central African Republic</option>
+                    <option value="TD" data-phone-prefix="+235">Chad</option>
+                    <option value="CL" data-phone-prefix="+56">Chile</option>
+                    <option value="CN" data-phone-prefix="+86">China</option>
+                    <option value="CO" data-phone-prefix="+57">Colombia</option>
+                    <option value="KM" data-phone-prefix="+269">Comoros</option>
+                    <option value="CG" data-phone-prefix="+242">Congo</option>
+                    <option value="CD" data-phone-prefix="+243">Democratic Republic of the Congo</option>
+                    <option value="CR" data-phone-prefix="+506">Costa Rica</option>
+                    <option value="CI" data-phone-prefix="+225">Côte d'Ivoire</option>
+                    <option value="HR" data-phone-prefix="+385">Croatia</option>
+                    <option value="CU" data-phone-prefix="+53">Cuba</option>
+                    <option value="CY" data-phone-prefix="+357">Cyprus</option>
+                    <option value="CZ" data-phone-prefix="+420">Czech Republic</option>
+                    <option value="DK" data-phone-prefix="+45">Denmark</option>
+                    <option value="DJ" data-phone-prefix="+253">Djibouti</option>
+                    <option value="DM" data-phone-prefix="+1 767">Dominica</option>
+                    <option value="DO" data-phone-prefix="+1 809">Dominican Republic</option>
+                    <option value="EC" data-phone-prefix="+593">Ecuador</option>
+                    <option value="EG" data-phone-prefix="+20">Egypt</option>
+                    <option value="SV" data-phone-prefix="+503">El Salvador</option>
+                    <option value="GQ" data-phone-prefix="+240">Equatorial Guinea</option>
+                    <option value="ER" data-phone-prefix="+291">Eritrea</option>
+                    <option value="EE" data-phone-prefix="+372">Estonia</option>
+                    <option value="ET" data-phone-prefix="+251">Ethiopia</option>
+                    <option value="FK" data-phone-prefix="+500">Falkland Islands (Malvinas)</option>
+                    <option value="FJ" data-phone-prefix="+679">Fiji</option>
+                    <option value="FI" data-phone-prefix="+358">Finland</option>
+                    <option value="FR" data-phone-prefix="+33">France</option>
+                    <option value="PF" data-phone-prefix="+689">French Polynesia</option>
+                    <option value="GA" data-phone-prefix="+241">Gabon</option>
+                    <option value="GM" data-phone-prefix="+220">Gambia</option>
+                    <option value="GE" data-phone-prefix="+995">Georgia</option>
+                    <option value="DE" data-phone-prefix="+49">Germany</option>
+                    <option value="GH" data-phone-prefix="+233">Ghana</option>
+                    <option value="GI" data-phone-prefix="+350">Gibraltar</option>
+                    <option value="GR" data-phone-prefix="+30">Greece</option>
+                    <option value="GD" data-phone-prefix="+1 473">Grenada</option>
+                    <option value="GT" data-phone-prefix="+502">Guatemala</option>
+                    <option value="GG" data-phone-prefix="+44">Guernsey</option>
+                    <option value="GN" data-phone-prefix="+224">Guinea</option>
+                    <option value="GW" data-phone-prefix="+245">Guinea-Bissau</option>
+                    <option value="GY" data-phone-prefix="+592">Guyana</option>
+                    <option value="HT" data-phone-prefix="+509">Haiti</option>
+                    <option value="HN" data-phone-prefix="+504">Honduras</option>
+                    <option value="HK" data-phone-prefix="+852">Hong Kong</option>
+                    <option value="HU" data-phone-prefix="+36">Hungary</option>
+                    <option value="IS" data-phone-prefix="+354">Iceland</option>
+                    <option value="IN" data-phone-prefix="+91">India</option>
+                    <option value="ID" data-phone-prefix="+62">Indonesia</option>
+                    <option value="IR" data-phone-prefix="+98">Iran</option>
+                    <option value="IQ" data-phone-prefix="+964">Iraq</option>
+                    <option value="IE" data-phone-prefix="+353">Ireland</option>
+                    <option value="IM" data-phone-prefix="+44">Isle of Man</option>
+                    <option value="IL" data-phone-prefix="+972">Israel</option>
+                    <option value="IT" data-phone-prefix="+39">Italy</option>
+                    <option value="JM" data-phone-prefix="+1 876">Jamaica</option>
+                    <option value="JP" data-phone-prefix="+81">Japan</option>
+                    <option value="JE" data-phone-prefix="+44">Jersey</option>
+                    <option value="JO" data-phone-prefix="+962">Jordan</option>
+                    <option value="KZ" data-phone-prefix="+7">Kazakhstan</option>
+                    <option value="KE" data-phone-prefix="+254">Kenya</option>
+                    <option value="KP" data-phone-prefix="+850">Democratic People's Republic of Korea</option>
+                    <option value="KR" data-phone-prefix="+82">Republic of Korea</option>
+                    <option value="KW" data-phone-prefix="+965">Kuwait</option>
+                    <option value="KG" data-phone-prefix="+996">Kyrgyzstan</option>
+                    <option value="LA" data-phone-prefix="+856">Lao People's Democratic Republic</option>
+                    <option value="LV" data-phone-prefix="+371">Latvia</option>
+                    <option value="LB" data-phone-prefix="+961">Lebanon</option>
+                    <option value="LS" data-phone-prefix="+266">Lesotho</option>
+                    <option value="LR" data-phone-prefix="+231">Liberia</option>
+                    <option value="LY" data-phone-prefix="+218">Libyan Arab Jamahiriya</option>
+                    <option value="LI" data-phone-prefix="+423">Liechtenstein</option>
+                    <option value="LT" data-phone-prefix="+370">Lithuania</option>
+                    <option value="LU" data-phone-prefix="+352">Luxembourg</option>
+                    <option value="MO" data-phone-prefix="+853">Macao</option>
+                    <option value="MK" data-phone-prefix="+389">Macedonia</option>
+                    <option value="MG" data-phone-prefix="+261">Madagascar</option>
+                    <option value="MW" data-phone-prefix="+265">Malawi</option>
+                    <option value="MY" data-phone-prefix="+60">Malaysia</option>
+                    <option value="MV" data-phone-prefix="+960">Maldives</option>
+                    <option value="ML" data-phone-prefix="+223">Mali</option>
+                    <option value="MT" data-phone-prefix="+356">Malta</option>
+                    <option value="MR" data-phone-prefix="+222">Mauritania</option>
+                    <option value="MU" data-phone-prefix="+230">Mauritius</option>
+                    <option value="MX" data-phone-prefix="+52">Mexico</option>
+                    <option value="FM" data-phone-prefix="+691">Micronesia</option>
+                    <option value="MD" data-phone-prefix="+373">Moldova</option>
+                    <option value="MC" data-phone-prefix="+377">Monaco</option>
+                    <option value="MN" data-phone-prefix="+976">Mongolia</option>
+                    <option value="ME" data-phone-prefix="+382">Montenegro</option>
+                    <option value="MS" data-phone-prefix="+1 664">Montserrat</option>
+                    <option value="MA" data-phone-prefix="+212">Morocco</option>
+                    <option value="MZ" data-phone-prefix="+258">Mozambique</option>
+                    <option value="MM" data-phone-prefix="+95">Myanmar</option>
+                    <option value="NA" data-phone-prefix="+264">Namibia</option>
+                    <option value="NP" data-phone-prefix="+977">Nepal</option>
+                    <option value="NL" data-phone-prefix="+31">Netherlands</option>
+                    <option value="NZ" data-phone-prefix="+64">New Zealand</option>
+                    <option value="NI" data-phone-prefix="+505">Nicaragua</option>
+                    <option value="NE" data-phone-prefix="+227">Niger</option>
+                    <option value="NG" data-phone-prefix="+234">Nigeria</option>
+                    <option value="NO" data-phone-prefix="+47">Norway</option>
+                    <option value="OM" data-phone-prefix="+968">Oman</option>
+                    <option value="PK" data-phone-prefix="+92">Pakistan</option>
+                    <option value="PW" data-phone-prefix="+680">Palau</option>
+                    <option value="PA" data-phone-prefix="+507">Panama</option>
+                    <option value="PG" data-phone-prefix="+675">Papua New Guinea</option>
+                    <option value="PY" data-phone-prefix="+595">Paraguay</option>
+                    <option value="PE" data-phone-prefix="+51">Peru</option>
+                    <option value="PH" data-phone-prefix="+63">Philippines</option>
+                    <option value="PL" data-phone-prefix="+48">Poland</option>
+                    <option value="PT" data-phone-prefix="+351">Portugal</option>
+                    <option value="PR" data-phone-prefix="+1">Puerto Rico</option>
+                    <option value="QA" data-phone-prefix="+974">Qatar</option>
+                    <option value="RO" data-phone-prefix="+40">Romania</option>
+                    <option value="RU" data-phone-prefix="+7">Russian Federation</option>
+                    <option value="RW" data-phone-prefix="+250">Rwanda</option>
+                    <option value="SH" data-phone-prefix="+290">Saint Helena</option>
+                    <option value="KN" data-phone-prefix="+1 869">Saint Kitts and Nevis</option>
+                    <option value="LC" data-phone-prefix="+1 758">Saint Lucia</option>
+                    <option value="VC" data-phone-prefix="+1 784">Saint Vincent and the Grenadines</option>
+                    <option value="WS" data-phone-prefix="+685">Samoa</option>
+                    <option value="SA" data-phone-prefix="+966">Saudi Arabia</option>
+                    <option value="SN" data-phone-prefix="+221">Senegal</option>
+                    <option value="RS" data-phone-prefix="+381">Serbia</option>
+                    <option value="SC" data-phone-prefix="+248">Seychelles</option>
+                    <option value="SL" data-phone-prefix="+232">Sierra Leone</option>
+                    <option value="SG" data-phone-prefix="+65">Singapore</option>
+                    <option value="SK" data-phone-prefix="+421">Slovakia</option>
+                    <option value="SI" data-phone-prefix="+386">Slovenia</option>
+                    <option value="SB" data-phone-prefix="+677">Solomon Islands</option>
+                    <option value="SO" data-phone-prefix="+252">Somalia</option>
+                    <option value="ZA" data-phone-prefix="+27">South Africa</option>
+                    <option value="ES" data-phone-prefix="+34">Spain</option>
+                    <option value="LK" data-phone-prefix="+94">Sri Lanka</option>
+                    <option value="SD" data-phone-prefix="+249">Sudan</option>
+                    <option value="SR" data-phone-prefix="+597">Suriname</option>
+                    <option value="SZ" data-phone-prefix="+268">Swaziland</option>
+                    <option value="SE" data-phone-prefix="+46">Sweden</option>
+                    <option value="CH" data-phone-prefix="+41">Switzerland</option>
+                    <option value="SY" data-phone-prefix="+963">Syrian Arab Republic</option>
+                    <option value="TW" data-phone-prefix="+886">Taiwan</option>
+                    <option value="TJ" data-phone-prefix="+992">Tajikistan</option>
+                    <option value="TZ" data-phone-prefix="+255">Tanzania</option>
+                    <option value="TH" data-phone-prefix="+66">Thailand</option>
+                    <option value="TL" data-phone-prefix="+670">Timor-Leste</option>
+                    <option value="TG" data-phone-prefix="+228">Togo</option>
+                    <option value="TO" data-phone-prefix="+676">Tonga</option>
+                    <option value="TT" data-phone-prefix="+1 868">Trinidad and Tobago</option>
+                    <option value="TN" data-phone-prefix="+216">Tunisia</option>
+                    <option value="TR" data-phone-prefix="+90">Turkey</option>
+                    <option value="TM" data-phone-prefix="+993">Turkmenistan</option>
+                    <option value="TC" data-phone-prefix="+1-649">Turks and Caicos Islands</option>
+                    <option value="UG" data-phone-prefix="+256">Uganda</option>
+                    <option value="UA" data-phone-prefix="+380">Ukraine</option>
+                    <option value="AE" data-phone-prefix="+971">United Arab Emirates</option>
+                    <option value="GB" data-phone-prefix="+44">United Kingdom</option>
+                    <option value="US" data-phone-prefix="+1">United States</option>
+                    <option value="UY" data-phone-prefix="+598">Uruguay</option>
+                    <option value="UZ" data-phone-prefix="+998">Uzbekistan</option>
+                    <option value="VU" data-phone-prefix="+678">Vanuatu</option>
+                    <option value="VE" data-phone-prefix="+58">Venezuela</option>
+                    <option value="VN" data-phone-prefix="+84">Viet Nam</option>
+                    <option value="VG" data-phone-prefix="+1 284">Virgin Islands, British</option>
+                    <option value="YE" data-phone-prefix="+967">Yemen</option>
+                    <option value="ZM" data-phone-prefix="+260">Zambia</option>
+                    <option value="ZW" data-phone-prefix="+263">Zimbabwe</option>
+                  </select>
+                </div>
+                <input required="" data-parsley-errors-messages-disabled="" data-parsley-minlength="1" type="text" class="countrylabel" id="2_user_countrycode_vac" name="vacancy[phone][code]" readonly="" autocomplete="off" autocorrect="off">
+                <input required="" data-parsley-errors-messages-disabled="" data-parsley-minlength="1" type="text" class="form-control-phone" id="2_user_number_vac" name="vacancy[phone][nr]" autocomplete="off" autocorrect="off">
+              </div>
+              <div class="col-md-4 vacancy_form_caption vacancy_form_email_row">
+                <span>E-mail<span style="color: #DD4539">*</span></span>
+              </div>
+              <div class="col-md-8 vacancy_form_email_row">
+                <input required="" data-parsley-errors-messages-disabled="" data-parsley-minlength="1" type="email" class="form-control-email" id="5_email_input" name="vacancy[email]" autocomplete="off" autocorrect="off">
+              </div>
+              <div class="col-md-4 vacancy_form_caption">
+                <span>Link to resume/CV</span>
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control-email" id="user_input" name="vacancy[summary]" autocomplete="off" autocorrect="off">
+              </div>
+              <div class="col-md-4 vacancy_form_caption">
+                <span>Cover letter</span>
+              </div>
+              <div class="col-md-8">
+                <div class="vacancy_form_textarea_wrap">
+                  <div class="vacancy_form_textarea_pull_tab"></div>
+                  <div class="vacancy_form_textarea_pull_tab_2"></div>
+                  <textarea class="form-control-email" id="user_textarea" name="vacancy[letter]" autocomplete="off" autocorrect="off"></textarea>
+                </div>
+              </div>
+              <div class="col-md-4 vacancy_form_caption">
+                <span>Attach the Resume/CV file</span>
+              </div>
+              <div class="col-md-8">
+                <ul data-file-list="file"></ul>
+                <input type="file" name="file" data-dotted-name="file" id="user_file" class="financing1_inputfile">
+                <label id="vacancy_user_file_label" for="user_file">
+                  <span>Upload</span>
+                </label>
+                <span id="user_file_name" class="vacancy_selected_file"></span>
+              </div>
+              <div class="col-md-4 vacancy_form_caption">
+                <span></span>
+              </div>
+              <div class="col-md-8">
+                <div>
+                  <div class="errorwindow" id="errorwindow-vacancy"></div>
+                </div>
+              </div>
+              <div style="padding: 0 0 0 0 !important;" class="col-md-4 vacancy_form_caption">
+                <span></span>
+              </div>
+              <div class="col-md-8">
+                <input required="" data-parsley-errors-messages-disabled="" type="checkbox" id="test1" name="user_agreed">
+                <label class="checkboxcaption" for="test1">I agree to the processing of my personal data</label>
+              </div>
+              <input type="hidden" name="vacancy[type]" data-vacancy-type="">
+              <input class="sendbutton" type="submit" value="Send" id="send_button_vacancy">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="faq-screen" data-section="">
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <div class="faq-line">
+        <div class="faq-title">Questions</div>
+        
+        <hr></div>
+    </div>
+    
+    <div class="faq-content">
+      <ul>
+        <li>
+          <div class="faq-content-title">How big a purchase can you finance?</div>
+          
+          <div class="faq-content-paragraph">From 10'000 EUR to 500'000 EUR. We can possibly increase the amount of funding after a long-term cooperation with you up to 2'000'000 EUR.</div>
+        </li>
+        <li>
+          <div class="faq-content-title">Is it the same as import factoring?</div>
+          
+          <div class="faq-content-paragraph">No, it's easier. We will not buy the claim rights; we will not pay you the amount of the claim. We will just sell you the necessary product with a grace period.</div>
+        </li>
+        <li>
+          <div class="faq-content-title">How much do you require as a prepayment?</div>
+          
+          <div class="faq-content-paragraph">
+            <p>The prepayment will make 20% or more of the purchase price of the goods. The amount of prepayment will be identified after a detailed study of your situation.</p>
+            
+            <p>There can be also exceptions, when you can provide prepayment not with money, but with goods from the warehouse. Such exceptions will be also discussed after a detailed study of your situation.</p>
+          </div>
+        </li>
+        <li>
+          <div class="faq-content-title">When will you require the full payment for the goods?</div>
+          
+          <div class="faq-content-paragraph">Within 60 days of the goods arriving at the warehouse but you will be able to buy the goods out as needed to make the full payment. That is, if the goods are being transported, for example, from China for 45 days, then the maximum financing period will be 105 days. There can be exceptions that should be considered specially.</div>
+        </li>
+        <li>
+          <div class="faq-content-title">Will I be able to get the goods from you for sale and pay later?</div>
+          
+          <div class="faq-content-paragraph">This is possible in some cases. We can discuss it individually.</div>
+        </li>
+        <li>
+          <div class="faq-content-title">Will it be possible to finance cargo that is in transit?</div>
+          
+          <div class="faq-content-paragraph">Yes, it will.</div>
+        </li>
+        <li>
+          <div class="faq-content-title">Will it be possible to finance the goods that have already been brought to the warehouse?</div>
+          
+          <div class="faq-content-paragraph">Yes, it will.</div>
+        </li>
+        <li>
+          <div class="faq-content-title">Do you finance exports?</div>
+          
+          <div class="faq-content-paragraph">As a rule, we finance imports. In certain cases we can talk about financing the full cycle of the goods movement.</div>
+        </li>
+        <li>
+          <div class="faq-content-title">What will happen if I don’t pay for the purchased goods within the specified period?</div>
+          
+          <div class="faq-content-paragraph">We will either extend the term of financing, or quickly sell the goods. The decision will be made together with you.</div>
+        </li>
+        <li>
+          <div class="faq-content-title">At what price will you sell me the goods?</div>
+          
+          <div class="faq-content-paragraph">
+            <p>The total price that we will sell the goods to you at is comprised from the price at which they were bought (which you agreed with the manufacturer), minus your advance payment, plus logistics costs and our&nbsp;commission fee. You can use the <u><a href="https://www.tradebacking.com/en/get-tradebacking">calculate the deal</a></u> button to see&nbsp;the approximate selling price of the goods.</p>
+          </div>
+        </li>
+        <li>
+          <div class="faq-content-title">What about the commission?</div>
+          
+          <div class="faq-content-paragraph">
+            <p>The amount of the commission will be considered individually and will depend on the risk level, the amount of financing, the complexity of the project and the cost of money at the market. You can use the <a href="https://www.tradebacking.com/en/get-tradebacking"><u>calculate the deal</u></a> button to see the approximate selling price of the goods.</p>
+            
+            <p>Comissions are included in the goods' price&nbsp;(see question&nbsp;"At what price will you sell me the goods?"). When selling the goods to you, the price will consist of your manufacturers' price and our margin. We will increase the price of the manufacturer:</p>
+            
+            <ul>
+              <li>for the total cost of our work;</li>
+              <li>for the capital lease cost;</li>
+              <li>for the warehouse and carrier services costs (previously agreed with you).</li>
+            </ul>
+            
+            <p>When evaluating our work, we consider&nbsp;the volume and complexity of the deal, compliance of its' members, the adjustment of the tradehouse to your relationships with the manufacturer, planning, organisational works, coordination and control of Parties' obligations' fulfillment.</p>
+            
+            <p>Leave us your contacts and we will discuss a preliminary proposal with you.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="d-flex justify-content-center">
+      <div><a class="page404-returnbtn" href="https://www.tradebacking.com/en/get-tradebacking">Apply for TradeBacking</a></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="financing-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-4">
+        <div class="footer-title">General inquiries</div>
+        <div class="footer-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7f161119103f0b0d1e1b1a1d1e1c14161118511c1012">[email&nbsp;protected]</a></div>
+        
+        <div>
+          <a class="footer-href" href="/en/privacy-policy">Privacy policy</a>
+        </div>
+      
+      </div>
+      <div class="col-lg-6 col-md-8">
+        <div class="footer-member">Member of <img src="../img/quinto.png"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://parsleyjs.org/dist/parsley.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/forms.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/getfinancing_page.js"></script>
+<script src="../js/calculator_page.js"></script>
+<script src="../js/about_page.js"></script>
+<script src="../js/contacts_page.js"></script>
+<script src="../js/main.js"></script>
+
+</body></html>
